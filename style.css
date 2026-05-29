@@ -1,33 +1,238 @@
 /* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  color: royalblue;
-  text-align: center;
-  background-color: bisque;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: #333;
+  background-color: #fefcf8;
+  font-family: "Nunito", serif;
 }
 
 /* Typography */
+h1,
+h2,
+h3 {
+  font-family: "Gelasio", serif;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 600;
+  margin: 0;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 28px;
+}
+
+h3 {
+  font-size: 24px;
+  margin: 12px 0;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 16px;
+}
 
 /* Links & Accents */
+a {
+  color: #4a6741;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.accent {
+  color: #ba404f;
+}
 
 /* Images */
+img {
+  max-width: 100%;
+  margin: 0 auto;
+}
 
+/* Common Layout Elements */
+.header-content,
+.footer-content,
+main {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+header,
+footer {
+  text-align: center;
+  padding: 32px 16px;
+}
+
+header {
+  padding-top: 40px;
+}
+
+.tagline {
+  color: #5a5a5a;
+  letter-spacing: 1px;
+}
 /* Hero Section */
+#hero-container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
 
+.hero-img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border: 1px solid #ddd5d0;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.bar {
+  margin: 0 auto;
+  justify-content: center;
+}
+.bar ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+.bar a{
+  padding: 14px 20px;
+  display: block;
+}
 /* Main Content */
+main {
+  padding: 0 16px;
+}
 
-/* About Section */
+section {
+  padding: 60px 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-/* Specials Section */
+/* Specials and SeasonalSection */
+.specials, .seasonal-picks {
+  max-width: 1150px;
+  padding: 60px 0;
+}
+
+.specials-list, .seasonal-list {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.special-offer, .seasonal-offer {
+  flex: 1 1 250px;
+  max-width: 350px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.special-offer, .seasonal-offer p {
+  margin-top: 6;
+  margin-bottom: 0;
+}
+
+.special-offer img {
+  height: 200px;
+  width: auto;
+  border: 1px solid #e4deda;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.seasonal-offer img {
+  height: 250px;
+  width: auto;
+  border: 1px solid #e4deda;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.price-now {
+  color: #e3776b;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.price-was, .seasonal-description {
+  color: #5a5a5a;
+  font-size: 14px;
+}
+
+.seasonal-details {
+  color: #6a8860;
+  font-size: 16px;
+}
 
 /* Visit Us Section */
+.contact-info {
+  margin-bottom: 34px;
+}
+
+.address-block, .phone-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5;
+  margin-bottom: 5px;
+}
+
+.material-symbols-outlined {
+  margin-right: 8px;
+  color: #e3776b;
+}
 
 iframe {
   width: 100%;
   height: 350px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
 footer {
+  background-color: #2d5325;
+  color: #d1d1d1;
   margin-top: 48px;
+}
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+.socials li{
+  margin: 0 15px;
+}
+.socials a{
+  color: #e3776b;
+}
+
+/**Testimonials**/
+.quote {
+  margin-top: 5px;
+  font-size: 22px;
+}
+.author {
+  margin-bottom: 80px;
 }
